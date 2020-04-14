@@ -3,7 +3,6 @@
 {% block content %}
 
 <section class= "daftar-produk">
-    {% for item in jualproduk %}
     <div class= "container-fluid py-3">
         <div class="row">
             <div class="col-lg-2">
@@ -12,7 +11,8 @@
                 <img src= "{{item.image.url}}" style="size: 50%;width: 300px;"> 
             </div>
             <div class="col-lg-6">
-                <a href="/jualproduk/{{ item.id }}" style="text-decoration:none,">{{item.name}}</a>
+                <a href="/tv/{{ item.id }}" style="text-decoration:none,"></a>
+                {{item.name}}
             </div>
         </div>
     </div>
